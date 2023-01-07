@@ -29,7 +29,7 @@ const findMetaMaskAccount = async () => {
       console.log("Found an authorized account:", account);
       return account;
     } else {
-      alert("No authorized account found");
+      console.log("No authorized account found");
       return null;
     }
   } catch (error) {
