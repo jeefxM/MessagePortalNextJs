@@ -2,7 +2,7 @@
   /* background-color: #e5eaf5; */
   height: 100%;
   background-image: linear-gradient(
-    -45deg,
+    -90deg,
     rgba(59, 173, 227, 1) 0%,
     rgba(87, 111, 230, 1) 25%,
     rgba(152, 68, 183, 1) 51%,
@@ -11,7 +11,7 @@
   animation: AnimateBG 20s ease infinite;
   font-family: Monospace;
   width: 100%;
-  font-size: calc(13px + 0.1vw);
+  font-size: calc(11px + 0.2vw);
   display: flex;
   flex-wrap: wrap;
 }
@@ -38,4 +38,10 @@
 
 button {
   width: 20rem;
+}
+
+@media (max-width: 515px) {
+  :root {
+    background-size: 190%;
+  }
 }
