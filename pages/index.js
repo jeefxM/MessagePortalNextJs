@@ -153,12 +153,12 @@ const App = () => {
     const account = await findMetaMaskAccount();
     if (account !== null) {
       setCurrentAccount(account);
+      getAllMessages();
     }
   };
 
   useEffect(() => {
     getAccount();
-    getAllMessages();
   }, []);
 
   return (
@@ -170,8 +170,8 @@ const App = () => {
           I am David and I am on my way to become a Blockchain Developer. In
           this contract you can send me a message and it will be stored on the
           blockchain. Currently this Dapp is hosted on Goerli testnet🌋⚒️{" "}
-          <br></br> I've also included a prize amount of 0.001 ether if you get
-          a random number which is more than or equal to 50 you will win the
+          <br></br> I have also included a prize amount of 0.001 ether if you
+          get a random number which is more than or equal to 50 you will win the
           prize! 💸
           <br></br> Merry christmas you filthy animal !
         </div>
