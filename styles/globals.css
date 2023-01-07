@@ -1,0 +1,41 @@
+:root {
+  /* background-color: #e5eaf5; */
+  height: 100%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(59, 173, 227, 1) 0%,
+    rgba(87, 111, 230, 1) 25%,
+    rgba(152, 68, 183, 1) 51%,
+    rgba(255, 53, 127, 1) 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+  font-family: Monospace;
+  width: 100%;
+  font-size: calc(13px + 0.1vw);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio {
+  font-size: calc(13px + 0.4vw);
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  padding: 20px 50px;
+}
+
+.ButtonGroup {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 5px;
+  width: calc(300px + 20vw);
+  font-size: calc(13px + 0.3vw);
+}
+
+button {
+  width: 20rem;
+}
